@@ -1,7 +1,11 @@
 const express = require("express")
+const cors = require("cors");
+
+// Going to add routes ( const variable = require (./routes))
 const app = express();
 
-
+app.use(express.json());
+// Going to use app.use ("/route", variable from the top)
 
 /** Handle 404 errors -- this matches everything */
 app.use(function (req, res, next) {
